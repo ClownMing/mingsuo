@@ -1,22 +1,5 @@
 # SpringBoot 项目初始模板
 
-### 主流框架 & 特性
-
-- Spring Boot 2.7.x（贼新）
-- Spring MVC
-- MyBatis + MyBatis Plus 数据访问（开启分页）
-- Spring Boot 调试工具和项目处理器
-- Spring AOP 切面编程
-- Spring Scheduler 定时任务
-- Spring 事务注解
-
-### 数据存储
-
-- MySQL 数据库
-- Redis 内存数据库
-- Elasticsearch 搜索引擎
-- 腾讯云 COS 对象存储
-
 ### 工具类
 
 - Easy Excel 表格处理
@@ -147,8 +130,3 @@ PUT post_v1
 3）开启同步任务，将数据库的帖子同步到 Elasticsearch
 
 找到 job 目录下的 `FullSyncPostToEs` 和 `IncSyncPostToEs` 文件，取消掉 `@Component` 注解的注释，再次执行程序即可触发同步：
-
-```java
-// todo 取消注释开启任务
-//@Component
-```
